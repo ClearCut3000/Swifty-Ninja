@@ -169,9 +169,7 @@ class GameScene: SKScene {
         enemy.addChild(emitter)
       }
     } else if enemyType == 6 {
-      enemy = SKSpriteNode(imageNamed: "penguin")
-      enemy.color = .red
-      enemy.colorBlendFactor = 0.8
+      enemy = SKSpriteNode(imageNamed: "penguinEvil")
       run(SKAction.playSoundFileNamed("launch.caf", waitForCompletion: false))
       enemy.name = "fastEnemy"
     } else {
